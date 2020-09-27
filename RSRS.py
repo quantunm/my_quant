@@ -77,7 +77,7 @@ class CRSRS_std:
         
         seq_benchmark = df_benchmark.loc[start_date:end_date, 'open']
         seq_benchmark_profit = seq_benchmark/seq_benchmark[0]
-        #print(seq_benchmark_profit)
+        print(len(seq_benchmark_profit), len(seq_date))
         seq_profit.append(1.0)
         hold_period = [None, None]
         seq_hold_period = []
